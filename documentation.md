@@ -12,6 +12,6 @@ Rm: Supprime des fichiers de l'arborescence de travail et de l'index. git rm [-f
 
 Sparse-checkout : Initialise et modifie la configuration de sparse-checkout, ce qui réduit la récupération à un ensemble de chemins donnés par une liste de modèles. Son comportement est expériementale et peut changer. git sparse-checkout [options]
 
-Bisect: Utilisez la recherche binaire pour trouver le commit qui a introduit un bug. git bisect .
+Bisect: Utilise la recherche binaire pour trouver le commit qui a introduit un bug. git bisect .
 
 
