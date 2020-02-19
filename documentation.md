@@ -16,6 +16,7 @@ $ git status On branch master Your branch is up-to-date with 'origin/master'. no
 
 GIT BRANCH
 
+
 cette une commande de git qui permet de voir la liste des branches qui se trouve sur votre repository.Il suffit de faire git branch.
 
 GIT COMMIT c'est la commande de git la plus utilise car elle permet de faire des enregistre de tous les modifications que vous avez effectue sur vos fichiers.Juste apres le git add on execute la commande
