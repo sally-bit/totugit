@@ -1,29 +1,18 @@
+La partie de ramsey. La commande clone : clôner les sources d'un remote github vers un ordinateur local , c'est faire une copie identique d'un repository distant. git clone "url" .
 
+Init : initialisation d'un projet (si le projet est créé depuis github, ne pas utiliser cette commande) ou réinitialisation d'un projet existant. git init .
 
-GIT DIFF: c'est une commande de git qui permet savoir non seulement quels fichiers ont changé mais aussi ce qui a changé dans ces fichiers grace aux chat de commit dqu'on a pu voir avec .Et aussi elle permet de montre les lignes exactes qui ont été ajoutées, modifiées ou effacées. syntaxe: git diff
+Add : ajoute tous les fichiers à l'index. git add "nom du dossier" .
 
-GIT GREP: Il est très facile de trouver des fichiers avec des mots ou des phrases avec la commande git grep. syntaxe: git grep truc_a_chercher
+Mv : Deplace ou renome un dossier , un repertoire ou un chemin de dossier git mv [-v] [-f] [-n] [-k] git mv [-v] [-f] [-n] [-k] ... -F --Obliger Forcer le changement de nom ou le déplacement d'un fichier même si la cible existe -k Ignorez les actions de déplacement ou de renommage qui entraîneraient une condition d'erreur. Une erreur se produit lorsqu'une source n'est ni existante ni contrôlée par Git, ou lorsqu'elle écraserait un fichier existant, sauf indication contraire -f. -n -à sec Ne fais rien; montrer seulement ce qui se passerait -v --verbeux Signalez les noms des fichiers lorsqu'ils sont déplacés .
 
-GIT LOG Après avoir créé plusieurs validations, ou si vous avez cloné un référentiel avec un historique de validations existant, vous voudrez probablement regarder en arrière pour voir ce qui s'est passé.cette commande répertorie tous les commit effectuées dans ce référentiel dans l'ordre chronologique inverse. cette commande est faire pour ca.et pour y sortir on appuye sur la lettre q. syntaxe: git log
+Restore : Restaurez les chemins d'accès spécifiés dans l'arborescence de travail avec du contenu provenant d'une source de restauration. Si un chemin est suivi mais n'existe pas dans la source de restauration, il sera supprimé pour correspondre à la source. La commande peut également être utilisée pour restaurer le contenu de l'index avec --staged ou restaurer à la fois l'arborescence de travail et l'index avec --staged --worktree. Par défaut, les sources de restauration pour l'arborescence de travail et l'index sont respectivement l'index et HEAD . --source pourrait être utilisé pour spécifier un commit comme source de restauration. Cette commande est experimentale sa fonction peut changer. git resore "nom fichier"
 
-GIT SHOW: disont que cette commande faire un peu pret le meme travail que git log mais a la difference de git log , git show affiche plusieurs autres elements comme le nom du commit ,les parties qui ont ete modifier,les etiques et autres plus d'autres detailles Exemple: commit1 --- a/documentation.md +++ b/documentation.md @@ -0,0 +1,7 @@ +GIT DIFF: +c'est une commande de git qui permet savoir non seulement .Et aussi elle permet de montre les lignes exactePS
+Rm: Supprime des fichiers de l'arborescence de travail et de l'index. git rm [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch] [--quiet] [-]
 
-GIT STATUS
+Sparse-checkout : Initialise et modifie la configuration de sparse-checkout, ce qui réduit la récupération à un ensemble de chemins donnés par une liste de modèles. Son comportement est expériementale et peut changer. git sparse-checkout [options]
 
-L'outil principal que vous utilisez pour déterminer quels fichiers sont dans quel état est la git status. Si vous exécutez cette commande directement après un clone, vous devriez voir quelque chose comme ceci:
+Bisect: Utilisez la recherche binaire pour trouver le commit qui a introduit un bug. git bisect .
 
-$ git status On branch master Your branch is up-to-date with 'origin/master'. nothing to commit, working directory clean. pour faire simple git status permet de voir la status de vos fichiers. s'ils ont ete modifier ou enregistre.
-
-GIT BRANCH
-
-cette une commande de git qui permet de voir la liste des branches qui se trouve sur votre repository.Il suffit de faire git branch.
-
-GIT COMMIT c'est la commande de git la plus utilise car elle permet de faire des enregistre de tous les modifications que vous avez effectue sur vos fichiers.Juste apres le git add on execute la commande
-
-syntaxe: git commit -m "message du commit". ce message vous permet de retrouve dans vos commits si vous en faites plusieurs.
-
-GIT MERGE
-
-cette commande git intervient dans le cas ou voous avez cree plusieurs pour travail desus avec vos collaborateur et que vous desirez les fusionnes ,rien de plus simple avec cette commande git. syntaxe: git merge .
 
 
