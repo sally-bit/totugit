@@ -37,7 +37,7 @@ git pull :
 La commande git pull est en fait la commande qui regroupe les commandes git fetch suivie de git merge. Cette commande télécharge les données des commits qui n'ont pas encore été récupérées dans votre branche locale puis fusionne ensuite ces données.
 
 git push :
-
+La commande git push est utilisée pour télécharger le contenu du référentiel local vers un référentiel distant. La transmission est la façon dont vous transférez les validations de votre référentiel local vers un référentiel distant. C'est la contrepartie de git fetch.
 
 
 
