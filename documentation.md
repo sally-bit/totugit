@@ -1,11 +1,17 @@
 La partie de ramsey. La commande clone : clôner les sources d'un remote github vers un ordinateur local , c'est faire une copie identique d'un repository distant. git clone "url" .
 
+
 Init : initialisation d'un projet (si le projet est créé depuis github, ne pas utiliser cette commande) ou réinitialisation d'un projet existant. git init .
 
 Add : ajoute tous les fichiers à l'index. git add "nom du dossier" .
 
 
 Mv : Deplace ou renome un dossier , un repertoire ou un chemin de dossier git mv [-v] [-f] [-n] [-k] git mv [-v] [-f] [-n] [-k] ... -F --Obliger Forcer le changement de nom ou le déplacement d'un fichier même si la cible existe -k Ignorez les actions de déplacement ou de renommage qui entraîneraient une condition d'erreur. Une erreur se produit lorsqu'une source n'est ni existante ni contrôlée par Git, ou lorsqu'elle écraserait un fichier existant, sauf indication contraire -f. -n -à sec Ne fais rien; montrer seulement ce qui se passerait -v --verbeux Signalez les noms des fichiers lorsqu'ils sont déplacés .
+
+
+GIT DIFF: c'est une commande de git qui permet savoir non seulement quels fichiers ont changé mais aussi ce qui a changé dans ces fichiers grace aux chat de commit dqu'on a pu voir avec .Et aussi elle permet de montre les lignes exactes qui ont été ajoutées, modifiées ou effacées. syntaxe: git diff
+
+GIT GREP: Il est très facile de trouver des fichiers avec des mots ou des phrases avec la commande git grep. syntaxe: git grep truc_a_chercher
 
 
 
