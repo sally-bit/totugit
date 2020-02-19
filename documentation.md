@@ -1,8 +1,5 @@
 
-
 GIT DIFF: c'est une commande de git qui permet savoir non seulement quels fichiers ont changé mais aussi ce qui a changé dans ces fichiers grace aux chat de commit dqu'on a pu voir avec .Et aussi elle permet de montre les lignes exactes qui ont été ajoutées, modifiées ou effacées. syntaxe: git diff
-
-
 
 GIT GREP: Il est très facile de trouver des fichiers avec des mots ou des phrases avec la commande git grep. syntaxe: git grep truc_a_chercher
 
